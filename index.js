@@ -24,16 +24,26 @@ $(function () {
     //
     // 要素を取得
     let ele0 = document.getElementById('form-pass_first');
+    let ele0 = document.getElementById('passwd1');
     let ele1 = document.getElementById('form-pass_second');
+    let ele0 = document.getElementById('passwd2');
     let ele2 = document.getElementById('form-date');
+    let ele2 = document.getElementById('date1');
     let ele3 = document.getElementById('form-time');
+    let ele3 = document.getElementById('time1');
+    let ele3 = document.getElementById('time2');
     let ele4 = document.getElementById('form-temp');
+    let ele4 = document.getElementById('sample2');
     let ele5 = document.getElementById('form-feverish');
+    let ele5 = document.getElementById('feverish');
     let ele6 = document.getElementById('form-respiratory');
+    let ele6 = document.getElementById('respiratory');
     let ele7 = document.getElementById('form-respiratory-yes');
+    let ele7 = document.getElementById('check-respiratory');
     let ele8 = document.getElementById('form-symptoms');
+    let ele8 = document.getElementById('symptoms');
     let ele9 = document.getElementById('form-symptoms-yes');
-    let ele10 = document.getElementById('form-contact');
+    let ele10 = document.getElementById('contact');
     let ele11 = document.getElementById('form-contact-yes');
 
     // 現在の display プロパティの値を保持
