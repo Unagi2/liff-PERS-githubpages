@@ -7,6 +7,7 @@ $(function () {
     });
 
     // 参加人数分の氏名欄を生成
+    /*
     $('#form-number').click(function () {
         $('#form-name').empty();
         var num = $('input[name="number"]:checked').val();
@@ -16,6 +17,7 @@ $(function () {
             );
         }
     });
+    */
 
     // 送信
     $('form').submit(function () {
@@ -27,7 +29,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `希望日：${date}\n人数：${number}\n氏名：${names}`;
+        var msg = `Password：${date}\n記録日：${number}\n時間帯：${names}`;
         sendText(msg);
 
         return false;
