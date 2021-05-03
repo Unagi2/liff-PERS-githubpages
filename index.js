@@ -19,13 +19,51 @@ $(function () {
     });
     */
 
+
     //Display設定
+    //
     // 要素を取得
-    let ele = document.getElementById('form-pass_first');
+    let ele0 = document.getElementById('form-pass_first');
+    let ele1 = document.getElementById('form-pass_second');
+    let ele2 = document.getElementById('form-date');
+    let ele3 = document.getElementById('form-time');
+    let ele4 = document.getElementById('form-temp');
+    let ele5 = document.getElementById('form-feverish');
+    let ele6 = document.getElementById('form-respiratory');
+    let ele7 = document.getElementById('form-respiratory-yes');
+    let ele8 = document.getElementById('form-symptoms');
+    let ele9 = document.getElementById('form-symptoms-yes');
+    let ele10 = document.getElementById('form-contact');
+    let ele11 = document.getElementById('form-contact-yes');
+
     // 現在の display プロパティの値を保持
-    const displayOriginal = ele.style.display;
+    const displayOriginal0 = ele0.style.display;
+    const displayOriginal1 = ele1.style.display;
+    const displayOriginal2 = ele2.style.display;
+    const displayOriginal3 = ele3.style.display;
+    const displayOriginal4 = ele4.style.display;
+    const displayOriginal5 = ele5.style.display;
+    const displayOriginal6 = ele6.style.display;
+    const displayOriginal7 = ele7.style.display;
+    const displayOriginal8 = ele8.style.display;
+    const displayOriginal9 = ele9.style.display;
+    const displayOriginal10 = ele10.style.display;
+    const displayOriginal11 = ele11.style.display;
+
     // none に設定して非表示
-    ele.style.display = 'none';
+    ele0.style.display = 'none';
+    ele1.style.display = 'none';
+    ele2.style.display = 'none';
+    ele3.style.display = 'none';
+    ele4.style.display = 'none';
+    ele5.style.display = 'none';
+    ele6.style.display = 'none';
+    ele7.style.display = 'none';
+    ele8.style.display = 'none';
+    ele9.style.display = 'none';
+    ele10.style.display = 'none';
+    ele11.style.display = 'none';
+
     // 元に戻して表示
     //ele.style.display = displayOriginal;
 
