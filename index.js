@@ -27,7 +27,7 @@ $(function () {
     let ele1 = document.getElementById('passwd1');
     let ele2 = document.getElementById('form-pass_second');
     let ele3 = document.getElementById('passwd2');
-
+    /*
     let ele4 = document.getElementById('form-date');
     let ele5 = document.getElementById('date1');
 
@@ -54,13 +54,14 @@ $(function () {
     let ele21 = document.getElementById('contact-group');
     let ele22 = document.getElementById('contact-name');
     let ele23 = document.getElementById('contact-action');
+    */
 
     // 現在の display プロパティの値を保持
     const displayOriginal0 = ele0.style.display;
     const displayOriginal1 = ele1.style.display;
     const displayOriginal2 = ele2.style.display;
     const displayOriginal3 = ele3.style.display;
-
+    /*
     const displayOriginal4 = ele4.style.display;
     const displayOriginal5 = ele5.style.display;
 
@@ -86,14 +87,14 @@ $(function () {
     const displayOriginal21 = ele21.style.display;
     const displayOriginal22 = ele22.style.display;
     const displayOriginal23 = ele23.style.display;
-
+    */
 
     // none に設定して非表示
     ele0.style.display = 'none';
     ele1.style.display = 'none';
     ele2.style.display = 'none';
     ele3.style.display = 'none';
-
+    /*
     ele4.style.display = 'none';
     ele5.style.display = 'none';
 
@@ -111,7 +112,7 @@ $(function () {
     ele14.style.display = 'none';
 
     ele16.style.display = 'none';
-    
+
     ele17.style.display = 'none';
     ele18.style.display = 'none';
 
@@ -119,7 +120,8 @@ $(function () {
     ele21.style.display = 'none';
     ele22.style.display = 'none';
     ele23.style.display = 'none';
-
+    */
+   
     // 元に戻して表示
     //ele.style.display = displayOriginal;
 
