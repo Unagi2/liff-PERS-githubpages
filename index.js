@@ -21,7 +21,9 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
+        var password = $('input[id="passwd2"]').val();
         var date = $('input[name="date"]').val();
+        var temp = $('input[name="temp"]').val();
         var number = $('input[name="number"]:checked').val();
         var names = '';
         $('#form-name').children().each(function (i, elm) {
@@ -29,7 +31,7 @@ $(function () {
         })
         names = names.slice(0, -1);
 
-        var msg = `Password：${date}\n記録日：${number}\n時間帯：${names}`;
+        var msg = `Password：${password}\n記録日：${date}\n時間帯：${number}\n体温：${temp}`;
         sendText(msg);
 
         return false;
