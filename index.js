@@ -21,23 +21,22 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        var first=null,password_set=null,password=null,date,temp=null,feverish=null,respiratory=null,symptoms=null,symptoms_yes=null,contact=null,contact_group=null,contact_name=null,contact_action=null;
 
-        first = $('input[name="first"]:checked').val();
-        password_set = $('input[id="passwd1"]').val();
-        password = $('input[id="passwd2"]').val();
-        date = $('input[name="date"]').val();
-        time = $('input[name="time"]:checked').val();
-        temp = $('input[name="temp"]').val();
-        feverish =$('input[name="feverish"]:checked').val();
-        respiratory =$('input[name="respiratory"]:checked').val();
+        var first = $('input[name="first"]:checked').val();
+        var password_set = $('input[id="passwd1"]').val();
+        var password = $('input[id="passwd2"]').val();
+        var date = $('input[name="date"]').val();
+        var time = $('input[name="time"]:checked').val();
+        var temp = $('input[name="temp"]').val();
+        var feverish =$('input[name="feverish"]:checked').val();
+        var respiratory =$('input[name="respiratory"]:checked').val();
         //var respiratory_yes =$('input[id=check-respiratory]:checked').val();
-        symptoms =$('input[name="symptoms"]:checked').val();
-        symptoms_yes =$('input[id="symptoms-text"]').val();
-        contact =$('input[name="contact"]:checked').val();
-        contact_group =$('input[name="group"]').val();
-        contact_name =$('input[name="name"]').val();
-        contact_action =$('input[name="action"]').val();
+        var symptoms =$('input[name="symptoms"]:checked').val();
+        var symptoms_yes =$('input[id="symptoms-text"]').val();
+        var contact =$('input[name="contact"]:checked').val();
+        var contact_group =$('input[name="group"]').val();
+        var contact_name =$('input[name="name"]').val();
+        var contact_action =$('input[name="action"]').val();
 
         /*
         var names = '';
@@ -47,9 +46,9 @@ $(function () {
         names = names.slice(0, -1);
         */
 
-        var checked_data = new Array();
-
+        
         // 複数ボタン値取得
+        var checked_data = new Array();
         var input_respiratory = document.querySelectorAll("input[name=cb]");
 
         if( 0 < input_respiratory.length ) {
