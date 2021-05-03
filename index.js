@@ -36,7 +36,7 @@ $(function () {
         var contact =$('input[name="contact"]:checked').val();
         var contact_group =$('input[name="group"]').val();
         var contact_name =$('input[name="name"]').val();
-        var contact_action =$('input[name="action"]').val();
+        var contact_action =$('textarea[name="action"]').val();
 
         /*
         var names = '';
