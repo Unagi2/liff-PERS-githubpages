@@ -21,7 +21,7 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        var first,password_set,password,date,temp,feverish,respiratory,symptoms,symptoms_yes,contact,contact_group,contact_name,contact_action = null;
+        var first,password_set,password,date,temp,feverish,respiratory,symptoms,symptoms_yes,contact,contact_group,contact_name,contact_action = false;
 
         first = $('input[name="first"]:checked').val();
         password_set = $('input[id="passwd1"]').val();
