@@ -60,19 +60,25 @@ $(function () {
     const displayOriginal1 = ele1.style.display;
     const displayOriginal2 = ele2.style.display;
     const displayOriginal3 = ele3.style.display;
+
     const displayOriginal4 = ele4.style.display;
     const displayOriginal5 = ele5.style.display;
+
     const displayOriginal6 = ele6.style.display;
     const displayOriginal7 = ele7.style.display;
     const displayOriginal8 = ele8.style.display;
+
     const displayOriginal9 = ele9.style.display;
     const displayOriginal10 = ele10.style.display;
+
     const displayOriginal11 = ele11.style.display;
     const displayOriginal12 = ele12.style.display;
+
     const displayOriginal13 = ele13.style.display;
     const displayOriginal14 = ele14.style.display;
 
     const displayOriginal16 = ele16.style.display;
+
     const displayOriginal17 = ele17.style.display;
     const displayOriginal18 = ele18.style.display;
 
@@ -87,21 +93,28 @@ $(function () {
     ele1.style.display = 'none';
     ele2.style.display = 'none';
     ele3.style.display = 'none';
+
     ele4.style.display = 'none';
     ele5.style.display = 'none';
+
     ele6.style.display = 'none';
     ele7.style.display = 'none';
     ele8.style.display = 'none';
+
     ele9.style.display = 'none';
     ele10.style.display = 'none';
+
     ele11.style.display = 'none';
+    ele12.style.display = 'none';
+
     ele13.style.display = 'none';
     ele14.style.display = 'none';
 
     ele16.style.display = 'none';
+    
     ele17.style.display = 'none';
     ele18.style.display = 'none';
-    
+
     ele20.style.display = 'none';
     ele21.style.display = 'none';
     ele22.style.display = 'none';
