@@ -24,27 +24,27 @@ $(function () {
     //
     // 要素を取得
     let ele0 = document.getElementById('form-pass_first');
-    let ele0 = document.getElementById('passwd1');
-    let ele1 = document.getElementById('form-pass_second');
-    let ele0 = document.getElementById('passwd2');
-    let ele2 = document.getElementById('form-date');
-    let ele2 = document.getElementById('date1');
-    let ele3 = document.getElementById('form-time');
-    let ele3 = document.getElementById('time1');
-    let ele3 = document.getElementById('time2');
-    let ele4 = document.getElementById('form-temp');
-    let ele4 = document.getElementById('sample2');
-    let ele5 = document.getElementById('form-feverish');
-    let ele5 = document.getElementById('feverish');
-    let ele6 = document.getElementById('form-respiratory');
-    let ele6 = document.getElementById('respiratory');
-    let ele7 = document.getElementById('form-respiratory-yes');
-    let ele7 = document.getElementById('check-respiratory');
-    let ele8 = document.getElementById('form-symptoms');
-    let ele8 = document.getElementById('symptoms');
-    let ele9 = document.getElementById('form-symptoms-yes');
-    let ele10 = document.getElementById('contact');
-    let ele11 = document.getElementById('form-contact-yes');
+    let ele1 = document.getElementById('passwd1');
+    let ele2 = document.getElementById('form-pass_second');
+    let ele3 = document.getElementById('passwd2');
+    let ele4 = document.getElementById('form-date');
+    let ele5 = document.getElementById('date1');
+    let ele6 = document.getElementById('form-time');
+    let ele7 = document.getElementById('time1');
+    let ele8 = document.getElementById('time2');
+    let ele9 = document.getElementById('form-temp');
+    let ele10 = document.getElementById('sample2');
+    let ele11 = document.getElementById('form-feverish');
+    let ele12 = document.getElementById('feverish');
+    let ele13 = document.getElementById('form-respiratory');
+    let ele14 = document.getElementById('respiratory');
+    let ele15 = document.getElementById('form-respiratory-yes');
+    let ele16 = document.getElementById('check-respiratory');
+    let ele17 = document.getElementById('form-symptoms');
+    let ele18 = document.getElementById('symptoms');
+    let ele19 = document.getElementById('form-symptoms-yes');
+    let ele20 = document.getElementById('contact');
+    let ele21 = document.getElementById('form-contact-yes');
 
     // 現在の display プロパティの値を保持
     const displayOriginal0 = ele0.style.display;
@@ -59,6 +59,16 @@ $(function () {
     const displayOriginal9 = ele9.style.display;
     const displayOriginal10 = ele10.style.display;
     const displayOriginal11 = ele11.style.display;
+    const displayOriginal12 = ele12.style.display;
+    const displayOriginal13 = ele13.style.display;
+    const displayOriginal14 = ele14.style.display;
+    const displayOriginal15 = ele15.style.display;
+    const displayOriginal16 = ele16.style.display;
+    const displayOriginal17 = ele17.style.display;
+    const displayOriginal18 = ele18.style.display;
+    const displayOriginal19 = ele19.style.display;
+    const displayOriginal20 = ele20.style.display;
+    const displayOriginal21 = ele21.style.display;
 
     // none に設定して非表示
     ele0.style.display = 'none';
