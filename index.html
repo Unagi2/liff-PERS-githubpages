@@ -16,7 +16,7 @@
         <p class="mt-3">以下に健康状態を入力して送信ボタンを押してください！<br>Please enter your health condition below and click the submit button!</p>
         <hr style="border:0; border-top:1px double; margin-bottom:20px">
 
-        <p class="mt-3"><b>初回ご利用ですか？</b><br>Is this your first visit?</p>
+        <p  id="form-number" class="mt-3"><b>初回ご利用ですか？</b><br>Is this your first visit?</p>
         <div id="form-number" class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-light">
                 <input type="radio" name="number" value="1" autocomplete="off">はい(Yes)
@@ -28,7 +28,7 @@
         <hr>
 
 
-        <p class="mt-3"><b>パスワード設定</b>(Password Setting)</p>
+        <p id=form-pass_first class="mt-3"><b>パスワード設定</b>(Password Setting)</p>
         <div id=form-pass_first>
             <!-- <label for="passwd1">Password:</label> -->
             <input type="password" id="passwd1" class="form-control">
@@ -36,7 +36,7 @@
         <hr>
 
 
-        <p class="mt-3"><b>Password</b></p>
+        <p id=form-pass_second class="mt-3"><b>Password</b></p>
         <div id=form-pass_second>
             <!-- <label for="passwd1">Password:</label> -->
             <input type="password" id="passwd2" class="form-control">
@@ -44,14 +44,14 @@
         <hr>
 
 
-        <p class="mt-3"><b>記録日</b>(Record Date)</p>
+        <p id="form-date" class="mt-3"><b>記録日</b>(Record Date)</p>
         <div id="form-date">
             <!-- <label for="date1">記録日(Record Date):</label> -->
             <input class="form-control" id="date1" name="date" maxlength="10">
         </div>
         <hr>
 
-        <p class="mt-3"><b>時間帯</b>(Time Zone)</p>
+        <p id="form-time" class="mt-3"><b>時間帯</b>(Time Zone)</p>
         <div id="form-time" class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-light">
                 <input type="radio" id="number1" name="number" value="1" autocomplete="off">午前(AM)
@@ -62,14 +62,14 @@
         </div>
         <hr>
 
-        <p class="mt-3"><b>体温</b>(Body Temperature)[℃]</p>
+        <p id="form-temp" class="mt-3"><b>体温</b>(Body Temperature)[℃]</p>
         <div id="form-temp">
             <input type="number" step="0.1" name="sample" id="sample2"　class="form-control"/>
         </div>
         <hr>
 
 
-        <p class="mt-3"><b>熱感</b>(Feverish)</p>
+        <p id="form-feverish" class="mt-3"><b>熱感</b>(Feverish)</p>
         <div id="form-feverish" class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-light">
                 <input type="radio" name="feverish" value="1" autocomplete="off">有り(Yes)
@@ -81,7 +81,7 @@
         <hr>
 
 
-        <p class="mt-3"><b>呼吸器症状</b>(Respiratory Symptoms)</p>
+        <p id="form-feverish" class="mt-3"><b>呼吸器症状</b>(Respiratory Symptoms)</p>
         <div id="form-feverish" class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
             <label class="btn btn-light">
                 <input type="radio" name="feverish" value="1" autocomplete="off">有り(Yes)
@@ -92,39 +92,39 @@
         </div>
 
 
-        <div>
+        <div id="form-feverish-yes">
             <label>
             <input type="checkbox" id=check-feverish name="cb1" value="咳">咳
             </label>
         </div>
-        <div>
+        <div id="form-feverish-yes">
             <label>
             <input type="checkbox" id=check-feverish name="cb2" value="呼吸苦">呼吸苦
             </label>
         </div>
-        <div>
+        <div id="form-feverish-yes">
             <label>
             <input type="checkbox" id=check-feverish name="cb3" value="頭痛">頭痛
             </label>
         </div>
-        <div>
+        <div id="form-feverish-yes">
             <label>
             <input type="checkbox" id=check-feverish name="cb4" value="鼻水">鼻水
             </label>
         </div>
-        <div>
+        <div id="form-feverish-yes">
             <label>
             <input type="checkbox" id=check-feverish name="cb5" value="味覚・嗅覚障害">味覚・嗅覚障害
             </label>
         </div>
-        <div>
+        <div id="form-feverish-yes">
             <label>
             <input type="checkbox" id=check-feverish name="cb6" value="吐き気">吐き気
             </label>
         </div>
         <hr>
 
-        <p class="mt-3"><b>その他自覚症状</b>(Subjective Symptoms)</p>
+        <p id="form-symptoms" class="mt-3"><b>その他自覚症状</b>(Subjective Symptoms)</p>
         <div id="form-symptoms" class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
             <label class="btn btn-light">
                 <input type="radio" name="symptoms" value="1" autocomplete="off">有り(Yes)
@@ -134,13 +134,13 @@
             </label>
         </div>
 
-        <div id="form-text">
+        <div id="form-symptoms-yes">
             <textarea class="form-control" id="symptoms-text" rows="3"></textarea>
         </div>
         <hr>
 
 
-        <p class="mt-3"><b>濃厚接触者情報</b>(Intensive Contact Information)</p>
+        <p id="form-contact" class="mt-3"><b>濃厚接触者情報</b>(Intensive Contact Information)</p>
         <div id="form-contact" class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
             <label class="btn btn-light">
                 <input type="radio" name="contact" value="1" autocomplete="off">有り(Yes)
@@ -150,7 +150,7 @@
             </label>
         </div>
 
-        <div>
+        <div id="form-contact-yes">
             <label for="contact-group">所属(Member)</label>
             <input class="form-control w-100 mt-1" id=contact-group name="name" maxlength="10">
 
