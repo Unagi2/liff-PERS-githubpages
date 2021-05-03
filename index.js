@@ -45,7 +45,23 @@ $(function () {
         names = names.slice(0, -1);
         */
 
-        var msg = `初回利用：${first}\nPassword Set：${password_set}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${respiratory_yes}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${contact_group}\n名前：${contact_name}\n行動内容：${contact_action}`;
+        var checked_data = new Array();
+
+        // 興味・関心のある分野
+        var input_respiratory = document.querySelectorAll("input[id=check-respiratory]");
+
+        if( 0 < input_respiratory.length ) {
+
+	        checked_data['respiratory'] = new Array();
+
+	        for(var data of input_respiratory) {
+		        if( data.checked ) {
+			        checked_data['respiratory'].push(data.value);
+		        }
+	        }
+        }
+
+        var msg = `初回利用：${first}\nPassword Set：${password_set}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${contact_group}\n名前：${contact_name}\n行動内容：${contact_action}`;
         sendText(msg);
 
         return false;
