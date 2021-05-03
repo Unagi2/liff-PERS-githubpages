@@ -24,6 +24,7 @@ $(function () {
     //
     // 要素を取得
     let ele0 = document.getElementById('form-pass_first');
+    /*
     let ele1 = document.getElementById('passwd1');
     let ele2 = document.getElementById('form-pass_second');
     let ele3 = document.getElementById('passwd2');
@@ -45,9 +46,11 @@ $(function () {
     let ele19 = document.getElementById('form-symptoms-yes');
     let ele20 = document.getElementById('contact');
     let ele21 = document.getElementById('form-contact-yes');
+    */
 
     // 現在の display プロパティの値を保持
     const displayOriginal0 = ele0.style.display;
+    /*
     const displayOriginal1 = ele1.style.display;
     const displayOriginal2 = ele2.style.display;
     const displayOriginal3 = ele3.style.display;
@@ -69,9 +72,11 @@ $(function () {
     const displayOriginal19 = ele19.style.display;
     const displayOriginal20 = ele20.style.display;
     const displayOriginal21 = ele21.style.display;
+    */
 
     // none に設定して非表示
     ele0.style.display = 'none';
+    /*
     ele1.style.display = 'none';
     ele2.style.display = 'none';
     ele3.style.display = 'none';
@@ -83,6 +88,7 @@ $(function () {
     ele9.style.display = 'none';
     ele10.style.display = 'none';
     ele11.style.display = 'none';
+    */
 
     // 元に戻して表示
     //ele.style.display = displayOriginal;
