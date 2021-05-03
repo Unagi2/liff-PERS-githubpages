@@ -25,8 +25,8 @@ $(function () {
         var password_set = $('input[id="passwd1"]').val();
         var password = $('input[id="passwd2"]').val();
         var date = $('input[name="date"]').val();
+        var time = $('input[name="time"]:checked').val();
         var temp = $('input[name="temp"]').val();
-        var number = $('input[name="number"]:checked').val();
         var feverish =$('input[name="feverish"]:checked').val();
         var respiratory =$('input[name="respiratory"]:checked').val();
         var respiratory_yes =$('input[id=check-respiratory]:checked').val();
