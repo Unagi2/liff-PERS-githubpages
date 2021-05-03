@@ -32,7 +32,7 @@ $(function () {
         var respiratory =$('input[name="respiratory"]:checked').val();
         //var respiratory_yes =$('input[id=check-respiratory]:checked').val();
         var symptoms =$('input[name="symptoms"]:checked').val();
-        var symptoms_yes =$('input[id="symptoms-text"]').val();
+        var symptoms_yes =$('textarea[id="symptoms-text"]').val();
         var contact =$('input[name="contact"]:checked').val();
         var contact_group =$('input[name="group"]').val();
         var contact_name =$('input[name="name"]').val();
