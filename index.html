@@ -78,6 +78,17 @@
 
 
         <p class="mt-3"><b>呼吸器症状</b></p>
+        <div class="form-group">
+            <label for="RespiratoryOrgans">Example multiple select</label>
+            <select multiple class="form-control" id="RespiratoryOrgans">
+              <option>咳</option>
+              <option>呼吸苦</option>
+              <option>頭痛</option>
+              <option>鼻水</option>
+              <option>味覚・嗅覚障害</option>
+              <option>吐き気</option>
+            </select>
+        </div>
 
         <p class="mt-3"><b>その他自覚症状</b>(Subjective Symptoms)</p>
         <div id="form-symptoms" class="btn-group btn-group-toggle w-100" data-toggle="buttons">
@@ -87,6 +98,7 @@
             <label class="btn btn-light">
                 <input type="radio" name="symptoms" value="2" autocomplete="off">無し(No)
             </label>
+            <textarea class="form-control" id="symptoms-text" rows="3"></textarea>
         </div>
 
 
