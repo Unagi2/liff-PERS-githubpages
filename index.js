@@ -21,6 +21,7 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
+        var first = $('input[name="first"]:checked').val();
         var password = $('input[id="passwd2"]').val();
         var date = $('input[name="date"]').val();
         var temp = $('input[name="temp"]').val();
@@ -43,7 +44,7 @@ $(function () {
         names = names.slice(0, -1);
         */
 
-        var msg = `Password：${password}\n記録日：${date}\n時間帯：${number}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${respiratory_yes}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${contact_group}\n名前：${contact_name}\n行動内容：${contact_action}`;
+        var msg = `初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${number}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${respiratory_yes}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${contact_group}\n名前：${contact_name}\n行動内容：${contact_action}`;
         sendText(msg);
 
         return false;
