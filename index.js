@@ -34,37 +34,37 @@ $(function () {
     let ele4 = document.getElementById('form-date');
     let ele5 = document.getElementById('date1');
     let ele_bar03 = document.getElementById('bar03');
-    /*
+    
     let ele6 = document.getElementById('form-time');
     let ele7 = document.getElementById('time1');
     let ele8 = document.getElementById('time2');
-    let ele_bar04 = document.getElementById('bar04);
+    let ele_bar04 = document.getElementById('bar04');
 
     let ele9 = document.getElementById('form-temp');
     let ele10 = document.getElementById('temp');
-    let ele_bar05 = document.getElementById('bar05);
+    let ele_bar05 = document.getElementById('bar05');
 
     let ele11 = document.getElementById('form-feverish');
     let ele12 = document.getElementById('feverish');
-    let ele_bar06 = document.getElementById('bar06);
+    let ele_bar06 = document.getElementById('bar06');
 
     let ele13 = document.getElementById('form-respiratory');
     let ele14 = document.getElementById('respiratory');
     
     let ele16 = document.getElementById('check-respiratory');
-    let ele_bar07 = document.getElementById('bar07);
+    let ele_bar07 = document.getElementById('bar07');
 
     let ele17 = document.getElementById('form-symptoms');
     let ele18 = document.getElementById('symptoms');
     let ele18 = document.getElementById('symptoms-text');
-    let ele_bar08 = document.getElementById('bar08);
+    let ele_bar08 = document.getElementById('bar08');
     
     let ele20 = document.getElementById('contact');
     let ele21 = document.getElementById('contact-group');
     let ele22 = document.getElementById('contact-name');
     let ele23 = document.getElementById('contact-action');
-    let ele_bar09 = document.getElementById('bar09);
-    */
+    let ele_bar09 = document.getElementById('bar09');
+    
 
     // 現在の display プロパティの値を保持
     const displayOriginal0 = ele0.style.display;
@@ -79,7 +79,7 @@ $(function () {
     const displayOriginal4 = ele4.style.display;
     const displayOriginal5 = ele5.style.display;
     const displayOriginal_bar03 = ele_bar03.style.display;
-    /*
+    
     const displayOriginal6 = ele6.style.display;
     const displayOriginal7 = ele7.style.display;
     const displayOriginal8 = ele8.style.display;
@@ -108,7 +108,7 @@ $(function () {
     const displayOriginal22 = ele22.style.display;
     const displayOriginal23 = ele23.style.display;
     const displayOriginal_bar09 = ele_bar09.style.display;
-    */
+    
 
     // none に設定して非表示
     ele0.style.display = 'none';
@@ -122,7 +122,7 @@ $(function () {
     ele4.style.display = 'none';
     ele5.style.display = 'none';
     ele_bar03.style.display = 'none';
-    /*
+    
     ele6.style.display = 'none';
     ele7.style.display = 'none';
     ele8.style.display = 'none';
@@ -151,7 +151,7 @@ $(function () {
     ele22.style.display = 'none';
     ele23.style.display = 'none';
     ele_bar09.style.display = 'none';
-    */
+    
 
     // 元に戻して表示
     //ele.style.display = displayOriginal;
