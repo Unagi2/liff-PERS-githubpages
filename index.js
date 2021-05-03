@@ -48,7 +48,7 @@ $(function () {
         var checked_data = new Array();
 
         // 興味・関心のある分野
-        var input_respiratory = document.querySelectorAll("input[id=check-respiratory]");
+        var input_respiratory = document.querySelectorAll("input[name=cb]");
 
         if( 0 < input_respiratory.length ) {
 
