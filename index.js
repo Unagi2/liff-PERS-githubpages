@@ -86,7 +86,7 @@ $(function () {
 
 	        for(var data of input_member) {
 		        if( data.checked ) {
-			        checked_member['member'].push(data.value);
+			        checked_member['member0'].push(data.value);
 		        }
 	        }
         }
@@ -100,7 +100,7 @@ $(function () {
 
 	        for(var data of input_name) {
 		        if( data.checked ) {
-			        checked_name['name'].push(data.value);
+			        checked_name['name0'].push(data.value);
 		        }
 	        }
         }
@@ -114,7 +114,7 @@ $(function () {
 
 	        for(var data of input_action) {
 		        if( data.checked ) {
-			        checked_action['action'].push(data.value);
+			        checked_action['action0'].push(data.value);
 		        }
 	        }
         }
