@@ -85,9 +85,7 @@ $(function () {
 	        checked_member['member'] = new Array();
 
 	        for(var data_member of input_member) {
-		        if( data_member.checked ) {
 			        checked_member['member'].push(data_member.value);
-		        }
 	        }
         }
         // name
