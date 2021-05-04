@@ -119,7 +119,7 @@ $(function () {
 	        }
         }
 
-        var msg = `【通常記録】\n初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${checked_member['member']}\n名前：${checked_name['name']}\n行動内容：${checked_action['action']}`;
+        var msg = `【通常記録】\n初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${checked_member['member0']}\n名前：${checked_name['name0']}\n行動内容：${checked_action['action0']}`;
         sendText(msg);
 
         return false;
