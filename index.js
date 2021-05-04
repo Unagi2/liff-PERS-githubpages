@@ -51,7 +51,7 @@ $(function () {
     let ele13 = document.getElementById('form-respiratory');
     let ele14 = document.getElementById('respiratory');
     
-    let ele16 = document.getElementById('check-respiratory');
+    //let ele16 = document.getElementById('check-respiratory');
     let ele_bar07 = document.getElementById('bar07');
 
     let ele17 = document.getElementById('form-symptoms');
@@ -96,7 +96,7 @@ $(function () {
     const displayOriginal13 = ele13.style.display;
     const displayOriginal14 = ele14.style.display;
 
-    const displayOriginal16 = ele16.style.display;
+    //const displayOriginal16 = ele16.style.display;
     const displayOriginal_bar07 = ele_bar07.style.display;
 
     const displayOriginal17 = ele17.style.display;
@@ -139,7 +139,7 @@ $(function () {
     ele13.style.display = 'none';
     ele14.style.display = 'none';
 
-    ele16.style.display = 'none';
+    //ele16.style.display = 'none';
     ele_bar07.style.display = 'none';
 
     ele17.style.display = 'none';
