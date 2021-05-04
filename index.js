@@ -102,13 +102,13 @@ $(function () {
         }
         // action
         var checked_action = new Array();
-        var input_action = document.querySelectorAll("input[id=contact-action]");
+        var textarea_action = document.querySelectorAll("textarea[id=contact-action]");
 
-        if( 0 < input_action.length ) {
+        if( 0 < textarea_action.length ) {
 
 	        checked_action['action'] = new Array();
 
-	        for(var data_action of input_action) {
+	        for(var data_action of textarea_action) {
 			    checked_action['action'].push(data_action.value);
 	        }
         }
