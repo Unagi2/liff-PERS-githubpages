@@ -195,7 +195,7 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        if( $('flag').val() == 1){
+        if($('flag').val() == 1){
             return false;
         }
         var first = $('input[name="first"]:checked').val();
