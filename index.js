@@ -195,7 +195,9 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-
+        if( flag == 1){
+            return false;
+        }
         var first = $('input[name="first"]:checked').val();
         //var password_set = $('input[id="passwd1"]').val();
         var password = $('input[id="passwd2"]').val();
