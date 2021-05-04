@@ -92,7 +92,7 @@ function formCheck(){
         </div>
         <hr>
 
-        <p class="mt-3">以下に健康状態を入力して送信ボタンを押してください！<br>Please enter your health condition below and click the submit button!</p>
+        <p class="mt-3">以下に県外訪問について入力し、送信ボタンを押して下さい！<br>Please fill in the following information about your out-of-town visit and click the submit button!</p>
         <p class="mt-3">【※】 : 必須項目（Required field）</p>
         <hr style="border:0; border-top:1px double; margin-bottom:30px">
 
@@ -129,7 +129,7 @@ function formCheck(){
         <hr id="bar02">
 
 
-        <p id="form-date" class="mt-3"><b>記録日※</b>(Record Date)</p>
+        <p id="form-date" class="mt-3"><b>訪問開始日※</b>(Start)</p>
         <p id="notice-input-text-3" style="display: none; color: red;"> 【記録日を入力して下さい】</p>
         <div>
             <!-- <label for="date1">記録日(Record Date):</label> -->
@@ -137,142 +137,25 @@ function formCheck(){
         </div>
         <hr id="bar03">
 
-        <p id="form-time" class="mt-3"><b>時間帯※</b>(Time Zone)</p>
-        <p id="notice-input-text-4" style="display: none; color: red;"> 【どちらかを選択して下さい】</p>
-        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
-            <label class="btn btn-light">
-                <input type="radio" id="time1" name="time" value="AM" autocomplete="off">午前(AM)
-            </label>
-            <label class="btn btn-light">
-                <input type="radio" id="time2" name="time" value="PM" autocomplete="off">午後(PM)
-            </label>
+        <p id="form-date" class="mt-3"><b>訪問終了日※</b>(End)</p>
+        <p id="notice-input-text-3" style="display: none; color: red;"> 【記録日を入力して下さい】</p>
+        <div>
+            <!-- <label for="date1">記録日(Record Date):</label> -->
+            <input class="form-control" id="date1" name="date" maxlength="10">
         </div>
         <hr id="bar04">
 
-        <p id="form-temp" class="mt-3"><b>体温※</b>(Body Temperature)[℃]</p>
-        <p id="notice-input-text-5" style="display: none; color: red;"> 【体温を入力して下さい】</p>
+        <p id="form-where" class="mt-3"><b>訪問先※</b>(Place)</p>
         <div>
-            <input type="number" step="0.1" name="temp" id="temp"　class="form-control"/>
+            <textarea class="form-control" id="where-text" rows="1"></textarea>
         </div>
         <hr id="bar05">
 
-
-        <p id="form-feverish" class="mt-3"><b>熱感※</b>(Feverish)</p>
-        <p id="notice-input-text-6" style="display: none; color: red;"> 【どちらかを選択して下さい】</p>
-        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
-            <label class="btn btn-light">
-                <input type="radio" name="feverish" id="feverish-yes" value="Yes" autocomplete="off">有り(Yes)
-            </label>
-            <label class="btn btn-light">
-                <input type="radio" name="feverish" id="feverish-no" value="No" autocomplete="off">無し(No)
-            </label>
+        <p id="form-what" class="mt-3"><b>イベント名/参加日/開催場所※</b>(Condition)</p>
+        <div>
+            <textarea class="form-control" id="what-text" rows="3"></textarea>
         </div>
         <hr id="bar06">
-
-
-        <p id="form-respiratory" class="mt-3"><b>呼吸器症状※</b>(Respiratory Symptoms)</p>
-        <p id="notice-input-text-7" style="display: none; color: red;"> 【どちらかを選択して下さい】</p>
-        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
-            <label class="btn btn-light">
-                <input type="radio" name="respiratory" id="respiratory-yes" value="Yes" autocomplete="off">有り(Yes)
-            </label>
-            <label class="btn btn-light">
-                <input type="radio" name="respiratory" id="respiratory-no" value="No" autocomplete="off">無し(No)
-            </label>
-        </div>
-
-
-        <div id="form-respiratory-yes">
-            <label>
-            <input type="checkbox" id="check-respiratory1" name="cb" value="咳">咳
-            </label>
-        </div>
-        <div id="form-respiratory-yes">
-            <label>
-            <input type="checkbox" id="check-respiratory2" name="cb" value="呼吸苦">呼吸苦
-            </label>
-        </div>
-        <div id="form-respiratory-yes">
-            <label>
-            <input type="checkbox" id="check-respiratory3" name="cb" value="頭痛">頭痛
-            </label>
-        </div>
-        <div id="form-respiratory-yes">
-            <label>
-            <input type="checkbox" id="check-respiratory4" name="cb" value="鼻水">鼻水
-            </label>
-        </div>
-        <div id="form-respiratory-yes">
-            <label>
-            <input type="checkbox" id="check-respiratory5" name="cb" value="味覚・嗅覚障害">味覚・嗅覚障害
-            </label>
-        </div>
-        <div id="form-respiratory-yes">
-            <label>
-            <input type="checkbox" id="check-respiratory6" name="cb" value="吐き気">吐き気
-            </label>
-        </div>
-        <hr id="bar07">
-
-        <p id="form-symptoms" class="mt-3"><b>その他自覚症状※</b>(Subjective Symptoms)</p>
-        <p id="notice-input-text-8" style="display: none; color: red;"> 【どちらかを選択して下さい】</p>
-        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
-            <label class="btn btn-light">
-                <input type="radio" name="symptoms" id="symptoms-yes" value="Yes" autocomplete="off">有り(Yes)
-            </label>
-            <label class="btn btn-light">
-                <input type="radio" name="symptoms" id="symptoms-no" value="No" autocomplete="off">無し(No)
-            </label>
-        </div>
-
-        <div>
-            <textarea class="form-control" id="symptoms-text" rows="3"></textarea>
-        </div>
-        <hr id="bar08">
-
-
-        <p id="form-contact" class="mt-3"><b>濃厚接触者の有無※</b>(Presence of close contacts)</p>
-        <p id="notice-input-text-9" style="display: none; color: rgb(255, 0, 0);"> 【どちらかを選択して下さい】</p>
-
-        <div class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
-            <label class="btn btn-light">
-                <input type="radio" name="contact" id="contact-yes" value="Yes" autocomplete="off">有り(Yes)
-            </label>
-            <label class="btn btn-light">
-                <input type="radio" name="contact" id="contact-no" value="No" autocomplete="off">無し(No)
-            </label>
-        </div>
-        <p class="mt-3"><b>濃厚接触者の詳細情報</b>(Intensive Contact Information)</p>
-        <p class="mt-3">人数</p>
-        <div id="form-number" class="btn-group btn-group-toggle w-100" data-toggle="buttons" style="margin-bottom:20px">
-            <label class="btn btn-secondary">
-                <input type="radio" name="number" value="1" autocomplete="off">1
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="number" value="2" autocomplete="off">2
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="number" value="3" autocomplete="off">3
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="number" value="4" autocomplete="off">4
-            </label>
-            <label class="btn btn-secondary">
-                <input type="radio" name="number" value="5" autocomplete="off">5
-            </label>
-        </div>
-
-        <div id="contact-sheet">
-            <label for="contact-group">所属(Member)</label>
-            <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
-
-            <label for="contact-name">氏名(Name)</label>
-            <input class="form-control w-100 mt-1" id=contact-name name="name" maxlength="10">
-
-            <label for="contact-action">行動内容(Action Description)</label>
-            <textarea class="form-control" id="contact-action" name="action" rows="3"></textarea>
-            <hr id="bar09">
-        </div>
 
         
         <input type="submit" class="mt-4 btn btn-primary" value="送信(Submit)">
