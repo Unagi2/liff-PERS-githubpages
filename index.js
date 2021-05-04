@@ -78,7 +78,7 @@ $(function () {
 
         // member
         var checked_member = new Array();
-        var input_member = document.querySelectorAll('contact-group');
+        var input_member = document.querySelectorAll('#contact-group');
 
         if( 0 < input_member.length ) {
 
@@ -92,7 +92,7 @@ $(function () {
         }
         // name
         var checked_name = new Array();
-        var input_name = document.querySelectorAll('contact-name');
+        var input_name = document.querySelectorAll('#contact-name');
 
         if( 0 < input_name.length ) {
 
@@ -106,7 +106,7 @@ $(function () {
         }
         // action
         var checked_action = new Array();
-        var input_action = document.querySelectorAll('contact-action');
+        var input_action = document.querySelectorAll('#contact-action');
 
         if( 0 < input_action.length ) {
 
