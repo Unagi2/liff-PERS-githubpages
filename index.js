@@ -14,13 +14,13 @@ $(function () {
             $('#contact-sheet').append(
                 `<div id="contact-sheet">
                 <label for="contact-group">所属(Member)</label>
-                <input class="form-control w-100 mt-1" id=contact-group name="group`+ i +`" maxlength="10">
+                <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
 
                 <label for="contact-name">氏名(Name)</label>
-                <input class="form-control w-100 mt-1" id=contact-name name="name`+ i +`" maxlength="10">
+                <input class="form-control w-100 mt-1" id=contact-name name="name" maxlength="10">
 
                 <label for="contact-action">行動内容(Action Description)</label>
-                <textarea class="form-control" id="contact-action" name="action`+ i +`" rows="3"></textarea>
+                <textarea class="form-control" id="contact-action" name="action" rows="3"></textarea>
                 </div>
                 <hr id="bar09">`
             );
@@ -78,7 +78,7 @@ $(function () {
 
         // member
         var checked_member = new Array();
-        var input_member = document.querySelectorAll("input[name=group0]");
+        var input_member = document.querySelectorAll('contact-group');
 
         if( 0 < input_member.length ) {
 
@@ -86,13 +86,13 @@ $(function () {
 
 	        for(var data of input_member) {
 		        if( data.checked ) {
-			        checked_member['member0'].push(data.value);
+			        checked_member['member'].push(data.value);
 		        }
 	        }
         }
         // name
         var checked_name = new Array();
-        var input_name = document.querySelectorAll("input[name=name0]");
+        var input_name = document.querySelectorAll('contact-name');
 
         if( 0 < input_name.length ) {
 
@@ -100,13 +100,13 @@ $(function () {
 
 	        for(var data of input_name) {
 		        if( data.checked ) {
-			        checked_name['name0'].push(data.value);
+			        checked_name['name'].push(data.value);
 		        }
 	        }
         }
         // action
         var checked_action = new Array();
-        var input_action = document.querySelectorAll("input[name=action0]");
+        var input_action = document.querySelectorAll('contact-action');
 
         if( 0 < input_action.length ) {
 
@@ -114,12 +114,12 @@ $(function () {
 
 	        for(var data of input_action) {
 		        if( data.checked ) {
-			        checked_action['action0'].push(data.value);
+			        checked_action['action'].push(data.value);
 		        }
 	        }
         }
 
-        var msg = `【通常記録】\n初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${checked_member['member0']}\n名前：${checked_name['name0']}\n行動内容：${checked_action['action0']}`;
+        var msg = `【通常記録】\n初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${checked_member['member']}\n名前：${checked_name['name']}\n行動内容：${checked_action['action']}`;
         sendText(msg);
 
         return false;
