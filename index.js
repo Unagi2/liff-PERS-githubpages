@@ -84,9 +84,9 @@ $(function () {
 
 	        checked_member['member'] = new Array();
 
-	        for(var data of input_member) {
-		        if( data.checked ) {
-			        checked_member['member'].push(data.value);
+	        for(var data_member of input_member) {
+		        if( data_member.checked ) {
+			        checked_member['member'].push(data_member.value);
 		        }
 	        }
         }
@@ -98,9 +98,9 @@ $(function () {
 
 	        checked_name['name'] = new Array();
 
-	        for(var data of input_name) {
-		        if( data.checked ) {
-			        checked_name['name'].push(data.value);
+	        for(var data_name of input_name) {
+		        if( data_name.checked ) {
+			        checked_name['name'].push(data_name.value);
 		        }
 	        }
         }
@@ -112,9 +112,9 @@ $(function () {
 
 	        checked_action['action'] = new Array();
 
-	        for(var data of input_action) {
-		        if( data.checked ) {
-			        checked_action['action'].push(data.value);
+	        for(var data_action of input_action) {
+		        if( data_action.checked ) {
+			        checked_action['action'].push(data_action.value);
 		        }
 	        }
         }
