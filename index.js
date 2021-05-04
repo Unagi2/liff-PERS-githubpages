@@ -27,7 +27,7 @@ $(function () {
         }
     });
 
-
+   
 
     /*
     var selecterBox = document.getElementById('form-pass_first');
