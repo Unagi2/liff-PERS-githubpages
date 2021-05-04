@@ -20,11 +20,36 @@ $(function () {
     */
 
 
+    /*
+
+    */
+    var selecterBox = document.getElementById('form-pass_first');
+
+    function formSwitch() {
+        check = document.getElementsByClassName('js-check')
+        if (check[0].checked) {
+            selecterBox.style.display = "none";
+
+        } else if (check[1].checked) {
+            selecterBox.style.display = "block";
+
+        } else {
+            selecterBox.style.display = "none";
+        }
+    }
+    window.addEventListener('load', formSwitch());
+
+    function entryChange2(){
+        if(document.getElementById('changeSelect')){
+            id = document.getElementById('changeSelect').value;
+        }
+    }
+
     //Display設定
     //
     // 要素を取得
-    let ele0 = document.getElementById('form-pass_first');
-    let ele1 = document.getElementById('passwd1');
+    //let ele0 = document.getElementById('form-pass_first');
+    //let ele1 = document.getElementById('passwd1');
     let ele_bar01 = document.getElementById('bar01');
 
     let ele2 = document.getElementById('form-pass_second');
@@ -67,8 +92,8 @@ $(function () {
     */
 
     // 現在の display プロパティの値を保持
-    const displayOriginal0 = ele0.style.display;
-    const displayOriginal1 = ele1.style.display;
+    //const displayOriginal0 = ele0.style.display;
+    //const displayOriginal1 = ele1.style.display;
     const displayOriginal_bar01 = ele_bar01.style.display;
 
     const displayOriginal2 = ele2.style.display;
@@ -111,8 +136,8 @@ $(function () {
     */
 
     // none に設定して非表示
-    ele0.style.display = 'none';
-    ele1.style.display = 'none';
+    //ele0.style.display = 'none';
+    //ele1.style.display = 'none';
     ele_bar01.style.display = 'none';
 
     ele2.style.display = 'none';
