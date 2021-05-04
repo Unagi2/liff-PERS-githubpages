@@ -19,10 +19,10 @@
         <p  id="form-first" class="mt-3"><b>初回ご利用ですか？</b><br>Is this your first visit?</p>
         <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-light">
-                <input class="js-check" type="radio" name="first" value="Yes" autocomplete="off" onclick="formSwitch()">はい(Yes)
+                <input id="yes" type="radio" name="first" value="Yes" autocomplete="off">はい(Yes)
             </label>
             <label class="btn btn-light">
-                <input class="js-check" type="radio" name="first" value="No" autocomplete="off" onclick="formSwitch()">いいえ(No)
+                <input id="no" type="radio" name="first" value="No" autocomplete="off">いいえ(No)
             </label>
         </div>
         <hr>
@@ -150,7 +150,26 @@
             </label>
         </div>
 
-        <div>
+        <p class="mt-3">人数</p>
+        <div id="form-number" class="btn-group btn-group-toggle w-100" data-toggle="buttons">
+            <label class="btn btn-secondary">
+                <input type="radio" name="number" value="1" autocomplete="off">1
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="number" value="2" autocomplete="off">2
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="number" value="3" autocomplete="off">3
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="number" value="4" autocomplete="off">4
+            </label>
+            <label class="btn btn-secondary">
+                <input type="radio" name="number" value="5" autocomplete="off">5
+            </label>
+        </div>
+
+        <div id="contact-sheet">
             <label for="contact-group">所属(Member)</label>
             <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
 

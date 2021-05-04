@@ -6,23 +6,30 @@ $(function () {
         });
     });
 
-    // 参加人数分の氏名欄を生成
-    /*
+    // 人数分の氏名欄を生成
     $('#form-number').click(function () {
         $('#form-name').empty();
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
             $('#form-name').append(
-                `<input class="form-control w-100 mt-1" name="name" maxlength="10">`
+                `<div id="contact-sheet">
+                <label for="contact-group">所属(Member)</label>
+                <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
+
+                <label for="contact-name">氏名(Name)</label>
+                <input class="form-control w-100 mt-1" id=contact-name name="name" maxlength="10">
+
+                <label for="contact-action">行動内容(Action Description)</label>
+                <textarea class="form-control" id="contact-action" name="action" rows="3"></textarea>
+                </div>
+                <hr id="bar09">`
             );
         }
     });
-    */
+
 
 
     /*
-
-    */
     var selecterBox = document.getElementById('form-pass_first');
 
     $(function formSwitch() {
@@ -44,17 +51,20 @@ $(function () {
             id = document.getElementById('changeSelect').value;
         }
     });
+    */
+    
 
     //Display設定
     //
     // 要素を取得
     //let ele0 = document.getElementById('form-pass_first');
     //let ele1 = document.getElementById('passwd1');
-    let ele_bar01 = document.getElementById('bar01');
 
-    let ele2 = document.getElementById('form-pass_second');
-    let ele3 = document.getElementById('passwd2');
-    let ele_bar02 = document.getElementById('bar02');
+    //let ele_bar01 = document.getElementById('bar01');
+
+    //let ele2 = document.getElementById('form-pass_second');
+    //let ele3 = document.getElementById('passwd2');
+    //let ele_bar02 = document.getElementById('bar02');
     /*
     let ele4 = document.getElementById('form-date');
     let ele5 = document.getElementById('date1');
@@ -94,11 +104,11 @@ $(function () {
     // 現在の display プロパティの値を保持
     //const displayOriginal0 = ele0.style.display;
     //const displayOriginal1 = ele1.style.display;
-    const displayOriginal_bar01 = ele_bar01.style.display;
+    //const displayOriginal_bar01 = ele_bar01.style.display;
 
-    const displayOriginal2 = ele2.style.display;
-    const displayOriginal3 = ele3.style.display;
-    const displayOriginal_bar02 = ele_bar02.style.display;
+    //const displayOriginal2 = ele2.style.display;
+    //const displayOriginal3 = ele3.style.display;
+    //const displayOriginal_bar02 = ele_bar02.style.display;
     
     /*
     const displayOriginal4 = ele4.style.display;
@@ -138,11 +148,11 @@ $(function () {
     // none に設定して非表示
     //ele0.style.display = 'none';
     //ele1.style.display = 'none';
-    ele_bar01.style.display = 'none';
+    //ele_bar01.style.display = 'none';
 
-    ele2.style.display = 'none';
-    ele3.style.display = 'none';
-    ele_bar02.style.display = 'none';
+    //ele2.style.display = 'none';
+    //ele3.style.display = 'none';
+    //ele_bar02.style.display = 'none';
     /*
     ele4.style.display = 'none';
     ele5.style.display = 'none';
