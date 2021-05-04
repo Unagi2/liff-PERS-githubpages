@@ -27,9 +27,9 @@ $(function () {
     let ele1 = document.getElementById('passwd1');
     let ele_bar01 = document.getElementById('bar01');
 
-    //let ele2 = document.getElementById('form-pass_second');
-    //let ele3 = document.getElementById('passwd2');
-    //let ele_bar02 = document.getElementById('bar02');
+    let ele2 = document.getElementById('form-pass_second');
+    let ele3 = document.getElementById('passwd2');
+    let ele_bar02 = document.getElementById('bar02');
     /*
     let ele4 = document.getElementById('form-date');
     let ele5 = document.getElementById('date1');
@@ -71,9 +71,9 @@ $(function () {
     const displayOriginal1 = ele1.style.display;
     const displayOriginal_bar01 = ele_bar01.style.display;
 
-    //const displayOriginal2 = ele2.style.display;
-    //const displayOriginal3 = ele3.style.display;
-    //const displayOriginal_bar02 = ele_bar02.style.display;
+    const displayOriginal2 = ele2.style.display;
+    const displayOriginal3 = ele3.style.display;
+    const displayOriginal_bar02 = ele_bar02.style.display;
     
     /*
     const displayOriginal4 = ele4.style.display;
@@ -115,9 +115,9 @@ $(function () {
     ele1.style.display = 'none';
     ele_bar01.style.display = 'none';
 
-    //ele2.style.display = 'none';
-    //ele3.style.display = 'none';
-    //ele_bar02.style.display = 'none';
+    ele2.style.display = 'none';
+    ele3.style.display = 'none';
+    ele_bar02.style.display = 'none';
     /*
     ele4.style.display = 'none';
     ele5.style.display = 'none';
