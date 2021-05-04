@@ -14,13 +14,13 @@ $(function () {
             $('#contact-sheet').append(
                 `<div id="contact-sheet">
                 <label for="contact-group">所属(Member)</label>
-                <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
+                <input class="form-control w-100 mt-1" id=contact-group name="group`+ i +`" maxlength="10">
 
                 <label for="contact-name">氏名(Name)</label>
-                <input class="form-control w-100 mt-1" id=contact-name name="name" maxlength="10">
+                <input class="form-control w-100 mt-1" id=contact-name name="name`+ i +`" maxlength="10">
 
                 <label for="contact-action">行動内容(Action Description)</label>
-                <textarea class="form-control" id="contact-action" name="action" rows="3"></textarea>
+                <textarea class="form-control" id="contact-action" name="action`+ i +`" rows="3"></textarea>
                 </div>
                 <hr id="bar09">`
             );
@@ -78,7 +78,7 @@ $(function () {
 
         // member
         var checked_member = new Array();
-        var input_member = document.querySelectorAll("input[name=group]");
+        var input_member = document.querySelectorAll("input[name=group0]");
 
         if( 0 < input_member.length ) {
 
@@ -92,7 +92,7 @@ $(function () {
         }
         // name
         var checked_name = new Array();
-        var input_name = document.querySelectorAll("input[name=name]");
+        var input_name = document.querySelectorAll("input[name=name0]");
 
         if( 0 < input_name.length ) {
 
@@ -106,7 +106,7 @@ $(function () {
         }
         // action
         var checked_action = new Array();
-        var input_action = document.querySelectorAll("input[name=action]");
+        var input_action = document.querySelectorAll("input[name=action0]");
 
         if( 0 < input_action.length ) {
 
