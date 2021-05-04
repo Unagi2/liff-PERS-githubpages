@@ -212,7 +212,7 @@ $(function () {
         var contact_name =$('input[name="name"]').val();
         var contact_action =$('textarea[name="action"]').val();
 
-        if(first == false | password == false){
+        if(first == false | password == false | date == false | time == false | temp == false | feverish == false | respiratory == false | symptoms == false | contact == false ){
             return false;
         }
 
