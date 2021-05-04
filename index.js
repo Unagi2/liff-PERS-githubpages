@@ -25,7 +25,7 @@ $(function () {
     */
     var selecterBox = document.getElementById('form-pass_first');
 
-    function formSwitch() {
+    $(function formSwitch() {
         check = document.getElementsByClassName('js-check')
         if (check[0].checked) {
             selecterBox.style.display = "none";
@@ -36,14 +36,14 @@ $(function () {
         } else {
             selecterBox.style.display = "none";
         }
-    }
+    });
     window.addEventListener('load', formSwitch());
 
-    function entryChange2(){
+    $(function entryChange2(){
         if(document.getElementById('changeSelect')){
             id = document.getElementById('changeSelect').value;
         }
-    }
+    });
 
     //Display設定
     //
