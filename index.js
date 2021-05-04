@@ -8,10 +8,10 @@ $(function () {
 
     // 人数分の氏名欄を生成
     $('#form-number').click(function () {
-        $('#form-name').empty();
+        $('#contact-sheet').empty();
         var num = $('input[name="number"]:checked').val();
         for (i = 0; i < num; i++) {
-            $('#form-name').append(
+            $('#contact-sheet').append(
                 `<div id="contact-sheet">
                 <label for="contact-group">所属(Member)</label>
                 <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
