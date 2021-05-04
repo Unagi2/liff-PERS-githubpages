@@ -76,7 +76,50 @@ $(function () {
 	        }
         }
 
-        var msg = `【通常記録】\n初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${contact_group}\n名前：${contact_name}\n行動内容：${contact_action}`;
+        // member
+        var checked_member = new Array();
+        var input_member = document.querySelectorAll("input[name=group]");
+
+        if( 0 < input_member.length ) {
+
+	        checked_member['member'] = new Array();
+
+	        for(var data of input_member) {
+		        if( data.checked ) {
+			        checked_member['member'].push(data.value);
+		        }
+	        }
+        }
+        // name
+        var checked_name = new Array();
+        var input_name = document.querySelectorAll("input[name=name]");
+
+        if( 0 < input_name.length ) {
+
+	        checked_name['name'] = new Array();
+
+	        for(var data of input_name) {
+		        if( data.checked ) {
+			        checked_name['name'].push(data.value);
+		        }
+	        }
+        }
+        // action
+        var checked_action = new Array();
+        var input_action = document.querySelectorAll("input[name=action]");
+
+        if( 0 < input_action.length ) {
+
+	        checked_action['action'] = new Array();
+
+	        for(var data of input_action) {
+		        if( data.checked ) {
+			        checked_action['action'].push(data.value);
+		        }
+	        }
+        }
+
+        var msg = `【通常記録】\n初回利用：${first}\nPassword：${password}\n記録日：${date}\n時間帯：${time}\n体温：${temp}\n熱感：${feverish}\n呼吸器症状：${respiratory}\n呼吸器症状内容：${checked_data['respiratory']}\nその他自覚症状：${symptoms}\n自覚症状内容：${symptoms_yes}\n濃厚接触者：${contact}\n所属：${checked_member['member']}\n名前：${checked_name['name']}\n行動内容：${checked_action['action']}`;
         sendText(msg);
 
         return false;
