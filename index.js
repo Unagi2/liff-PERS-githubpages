@@ -195,9 +195,7 @@ $(function () {
 
     // 送信
     $('form').submit(function () {
-        if($('flag').val() == 1){
-            return false;
-        }
+
         var first = $('input[name="first"]:checked').val();
         //var password_set = $('input[id="passwd1"]').val();
         var password = $('input[id="passwd2"]').val();
@@ -213,6 +211,10 @@ $(function () {
         var contact_group =$('input[name="group"]').val();
         var contact_name =$('input[name="name"]').val();
         var contact_action =$('textarea[name="action"]').val();
+
+        if(first == false | password == false){
+            return false;
+        }
 
         /*
         var names = '';
