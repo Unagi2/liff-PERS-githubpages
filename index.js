@@ -14,10 +14,10 @@ $(function () {
             $('#contact-sheet').append(
                 `<div id="contact-sheet">
                 <label for="contact-group">所属(Member)</label>
-                <input class="form-control w-100 mt-1" id=contact-group name="group" maxlength="10">
+                <input class="form-control w-100 mt-1" id="contact-group" name="group" maxlength="10">
 
                 <label for="contact-name">氏名(Name)</label>
-                <input class="form-control w-100 mt-1" id=contact-name name="name" maxlength="10">
+                <input class="form-control w-100 mt-1" id="contact-name" name="name" maxlength="10">
 
                 <label for="contact-action">行動内容(Action Description)</label>
                 <textarea class="form-control" id="contact-action" name="action" rows="3"></textarea>
