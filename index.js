@@ -33,7 +33,6 @@ $(function () {
     $('form').submit(function () {
 
         var first = $('input[name="first"]:checked').val();
-        //var password_set = $('input[id="passwd1"]').val();
         var password = $('input[id="passwd2"]').val();
         var date = $('input[name="date"]').val();
         var time = $('input[name="time"]:checked').val();
