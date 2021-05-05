@@ -109,7 +109,7 @@ $(function () {
 	        checked_action['action'] = new Array();
 
 	        for(var data_action of textarea_action) {
-			    checked_action['action'].push(data_action.value);
+			    checked_action['action'].push("\""+data_action.value+"\"");
 	        }
         }
 
