@@ -71,7 +71,7 @@ $(function () {
 
 	        for(var data of input_respiratory) {
 		        if( data.checked ) {
-			        checked_data['respiratory'].push(data.value);
+			        checked_data['respiratory'].push("\""+data.value+"\"");
 		        }
 	        }
         }
@@ -85,7 +85,7 @@ $(function () {
 	        checked_member['member'] = new Array();
 
 	        for(var data_member of input_member) {
-			    checked_member['member'].push(data_member.value);
+			    checked_member['member'].push("\""+data_member.value+"\"");
 	        }
         }
         // name
@@ -97,7 +97,7 @@ $(function () {
 	        checked_name['name'] = new Array();
 
 	        for(var data_name of input_name) {
-			    checked_name['name'].push(data_name.value);
+			    checked_name['name'].push("\""+data_name.value+"\"");
 	        }
         }
         // action
