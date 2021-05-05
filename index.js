@@ -113,7 +113,7 @@ $(function () {
 	        }
         }
 
-        var msg = `【通常記録】\rmode:Normal\r初回利用:${first}\rPassword:${password}\r記録日:${date}\r時間帯:${time}\r体温:${temp}\r熱感:${feverish}\r呼吸器症状:${respiratory}\r呼吸器症状内容:${checked_data['respiratory']}\rその他自覚症状:${symptoms}\r自覚症状内容:${symptoms_yes}\r濃厚接触者:${contact}\r所属:${checked_member['member']}\r名前:${checked_name['name']}\r行動内容:${checked_action['action']}\r`;
+        var msg = `【通常記録】\nmode:Normal\n初回利用:${first}\nPassword:${password}\n記録日:${date}\n時間帯:${time}\n体温:${temp}\n熱感:${feverish}\n呼吸器症状:${respiratory}\n呼吸器症状内容:${checked_data['respiratory']}\nその他自覚症状:${symptoms}\n自覚症状内容:${symptoms_yes}\n濃厚接触者:${contact}\n所属:${checked_member['member']}\n名前:${checked_name['name']}\n行動内容:${checked_action['action']}\n`;
         sendText(msg);
 
         return false;
