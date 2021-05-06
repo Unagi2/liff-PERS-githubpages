@@ -20,7 +20,7 @@ $(function () {
                 <input class="form-control w-100 mt-1" id="contact-name" name="name">
 
                 <label for="contact-action">行動内容(Action Description)</label>
-                <textarea class="form-control w-100 mt-1" id="contact-action" name="action" rows="3"></textarea>
+                <textarea class="form-control w-100 mt-1" id="contact-action" name="action" rows="3">例）１泊２日のキャンプに一緒に行った。</textarea>
                 </div>
                 <hr id="bar09">`
             );
