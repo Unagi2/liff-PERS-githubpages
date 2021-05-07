@@ -158,7 +158,7 @@ $(function () {
                 return false;
             }
 
-            var msg = `【医療受診記録】\nmode:Hospital\n初回利用:${first}\nPassword:${password}\n受診日:${date}\n病院名:${where}\n病状:${what}\n`;
+            var msg = `【県外訪問記録】\nmode:Visit\n初回利用:${first}\nPassword:${password}\n訪問開始日:${date_start}\n訪問開始日:${date_end}\n病院名:${where}\n病状:${what}\n`;
         }
 
         else{
