@@ -32,7 +32,7 @@ $(function () {
     // 送信
     $('form').submit(function () {
 
-        var badge = $('h1[name="badge').val();
+        var badge = $('h1[name="badge]').val();
         
         if(badge == "通常記録"){
             var first = $('input[name="first"]:checked').val();
