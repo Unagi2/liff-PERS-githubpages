@@ -118,7 +118,7 @@ $(function () {
             var msg = `【通常記録】\nmode:Normal\n初回利用:${first}\nPassword:${password}\n記録日:${date}\n時間帯:${time}\n体温:${temp}\n熱感:${feverish}\n呼吸器症状:${respiratory}\n呼吸器症状内容:${checked_data['respiratory']}\nその他自覚症状:${symptoms}\n自覚症状内容:${symptoms_yes}\n濃厚接触者:${contact}\n所属:${checked_member['member']}\n名前:${checked_name['name']}\n行動内容:${checked_action['action']}\n`;
         }
         
-        if(badge == "医療受診記録"){
+        else if(badge == "医療受診記録"){
             var first = $('input[name="first_side"]:checked').val();
             var password = $('input[id="passwd_side"]').val();
             var date = $('input[name="date_side"]').val();
@@ -131,6 +131,9 @@ $(function () {
             }
 
             var msg = `【医療受診記録】\nmode:Hospital\n初回利用:${first}\nPassword:${password}\n受診日:${date}\n病院名:${where}\n病状:${what}\n`;
+        }
+        else{
+            var msg = `Error`;
         }
 
         
