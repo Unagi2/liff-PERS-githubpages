@@ -6,6 +6,17 @@ $(function () {
         });
     });
 
+    $(function () {
+        $('input[name="date-start"]').datepicker({
+            dateFormat: 'yy/mm/dd',
+        });
+    });
+    $(function () {
+        $('input[name="date-end"]').datepicker({
+            dateFormat: 'yy/mm/dd',
+        });
+    });
+
 
     // 人数分の氏名欄を生成
     $('#form-number').click(function () {
@@ -121,7 +132,7 @@ $(function () {
         
         else if(badge == "医療受診記録"){
             var first = $('input[name="first_side"]:checked').val();
-            var password = $('input[id="passwd_side"]').val();
+            var password = $('input[id="passwd2"]').val();
             var date = $('input[name="date"]').val();
             var where =$('textarea[name="where-text"]').val();
             var what =$('textarea[name="what-text"]').val();
@@ -133,6 +144,23 @@ $(function () {
 
             var msg = `【医療受診記録】\nmode:Hospital\n初回利用:${first}\nPassword:${password}\n受診日:${date}\n病院名:${where}\n病状:${what}\n`;
         }
+
+        else if(badge == "医療受診記録"){
+            var first = $('input[name="first_side"]:checked').val();
+            var password = $('input[id="passwd2"]').val();
+            var date_start = $('input[name="date-start"]').val();
+            var date_end = $('input[name="date-start"]').val();
+            var where =$('textarea[name="where-text"]').val();
+            var what =$('textarea[name="what-text"]').val();
+
+
+            if(first == false | password == false | date == false | where == false | what == false ){
+                return false;
+            }
+
+            var msg = `【医療受診記録】\nmode:Hospital\n初回利用:${first}\nPassword:${password}\n受診日:${date}\n病院名:${where}\n病状:${what}\n`;
+        }
+
         else{
             var msg = `Error`;
         }
