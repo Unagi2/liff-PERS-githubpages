@@ -30,7 +30,7 @@ $(function () {
 
 
     // 送信
-    $('form[name = "form1"]').submit(function () {
+    $('form').submit(function () {
 
         var first = $('input[name="first"]:checked').val();
         var password = $('input[id="passwd2"]').val();
