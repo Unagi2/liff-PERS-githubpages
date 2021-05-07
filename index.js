@@ -149,7 +149,7 @@ $(function () {
             var first = $('input[name="first"]:checked').val();
             var password = $('input[id="passwd2"]').val();
             var date_start = $('input[id="date-start"]').val();
-            var date_end = $('input[id="date-start"]').val();
+            var date_end = $('input[id="date-end"]').val();
             var where =$('textarea[id="where-text"]').val();
             var what =$('textarea[id="what-text"]').val();
 
