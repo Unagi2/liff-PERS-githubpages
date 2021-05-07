@@ -145,7 +145,7 @@ $(function () {
             var msg = `【医療受診記録】\nmode:Hospital\n初回利用:${first}\nPassword:${password}\n受診日:${date}\n病院名:${where}\n病状:${what}\n`;
         }
 
-        else if(badge == "医療受診記録"){
+        else if(badge == "県外訪問記録"){
             var first = $('input[name="first_side"]:checked').val();
             var password = $('input[id="passwd2"]').val();
             var date_start = $('input[name="date-start"]').val();
