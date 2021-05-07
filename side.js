@@ -9,7 +9,7 @@ $(function () {
 
 
     // 送信
-    $('form[id = "submit_hospital"]').submit(function () {
+    $('form[name = "form2"]').submit(function () {
 
         var first = $('input[name="first_side"]:checked').val();
         var password = $('input[id="passwd_side"]').val();
