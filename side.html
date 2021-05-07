@@ -102,10 +102,10 @@ function formCheck(){
         <p id="notice-input-text-1" style="display: none; color: red;"> 【どちらかを選択して下さい】</p>
         <div class="btn-group btn-group-toggle w-100" data-toggle="buttons">
             <label class="btn btn-outline-secondary">
-                <input id="yes" type="radio" name="first" value="Yes" autocomplete="off" required>はい(Yes)
+                <input id="yes" type="radio" name="first_side" value="Yes" autocomplete="off" required>はい(Yes)
             </label>
             <label class="btn btn-outline-secondary">
-                <input id="no" type="radio" name="first" value="No" autocomplete="off">いいえ(No)
+                <input id="no" type="radio" name="first_side" value="No" autocomplete="off">いいえ(No)
             </label>
         </div>
         <hr id="bar01">
@@ -124,7 +124,7 @@ function formCheck(){
         <p id="notice-input-text-2-2" style="display: none; color: red;"> 【パスワードを入力して下さい】</p>
         <div>
             <!-- <label for="passwd1">Password:</label> -->
-            <input type="password" id="passwd2" name="pass" class="form-control" required>
+            <input type="password" id="passwd_side" name="pass_side" class="form-control" required>
         </div>
         <hr id="bar02">
 
@@ -133,7 +133,7 @@ function formCheck(){
         <p id="notice-input-text-2-3" style="display: none; color: red;"> 【記録日を入力して下さい】</p>
         <div>
             <!-- <label for="date1">記録日(Record Date):</label> -->
-            <input class="form-control" id="date1" name="date" maxlength="10" required>
+            <input class="form-control" id="date1" name="date_side" maxlength="10" required>
         </div>
         <hr id="bar03">
 
@@ -150,7 +150,7 @@ function formCheck(){
         <hr id="bar05">
 
         
-        <input type="submit" class="mt-4 btn btn-primary" value="送信(Submit)">
+        <input type="submit" id = "submit_hospital" class="mt-4 btn btn-primary" value="送信(Submit)">
         <div style="margin-bottom:50px"></div>
     </form>
 
