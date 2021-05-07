@@ -6,6 +6,12 @@ $(function () {
         });
     });
 
+    $(function () {
+        $('input[name="date_side"]').datepicker({
+            dateFormat: 'yy/mm/dd',
+        });
+    });
+
     // 人数分の氏名欄を生成
     $('#form-number').click(function () {
         $('#contact-sheet').empty();
