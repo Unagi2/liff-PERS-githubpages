@@ -6,11 +6,6 @@ $(function () {
         });
     });
 
-    $(function () {
-        $('input[name="date_side"]').datepicker({
-            dateFormat: 'yy/mm/dd',
-        });
-    });
 
     // 人数分の氏名欄を生成
     $('#form-number').click(function () {
@@ -127,7 +122,7 @@ $(function () {
         else if(badge == "医療受診記録"){
             var first = $('input[name="first_side"]:checked').val();
             var password = $('input[id="passwd_side"]').val();
-            var date = $('input[name="date_side"]').val();
+            var date = $('input[name="date"]').val();
             var where =$('textarea[name="where-text"]').val();
             var what =$('textarea[name="what-text"]').val();
 
