@@ -131,7 +131,7 @@ $(function () {
         }
         
         else if(badge == "医療受診記録"){
-            var first = $('input[name="first_side"]:checked').val();
+            var first = $('input[name="first"]:checked').val();
             var password = $('input[id="passwd2"]').val();
             var date = $('input[name="date"]').val();
             var where =$('textarea[name="where-text"]').val();
@@ -146,12 +146,12 @@ $(function () {
         }
 
         else if(badge == "県外訪問記録"){
-            var first = $('input[name="first_side"]:checked').val();
+            var first = $('input[name="first"]:checked').val();
             var password = $('input[id="passwd2"]').val();
-            var date_start = $('input[name="date-start"]').val();
-            var date_end = $('input[name="date-start"]').val();
-            var where =$('textarea[name="where-text"]').val();
-            var what =$('textarea[name="what-text"]').val();
+            var date_start = $('input[id="date-start"]').val();
+            var date_end = $('input[id="date-start"]').val();
+            var where =$('textarea[id="where-text"]').val();
+            var what =$('textarea[id="what-text"]').val();
 
 
             if(first == false | password == false | date == false | where == false | what == false ){
