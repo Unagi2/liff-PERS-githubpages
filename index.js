@@ -134,8 +134,8 @@ $(function () {
             var first = $('input[name="first"]:checked').val();
             var password = $('input[id="passwd2"]').val();
             var date = $('input[name="date"]').val();
-            var where =$('textarea[name="where-text"]').val();
-            var what =$('textarea[name="what-text"]').val();
+            var where =$('textarea[id="where-text"]').val();
+            var what =$('textarea[id="what-text"]').val();
 
             /*
             if(first == false | password == false | date == false | where == false | what == false ){
