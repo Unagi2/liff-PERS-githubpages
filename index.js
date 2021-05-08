@@ -61,10 +61,12 @@ $(function () {
             var contact_group =$('input[name="group"]').val();
             var contact_name =$('input[name="name"]').val();
             var contact_action =$('textarea[name="action"]').val();
-
+            
+            /*
             if(first == false | password == false | date == false | time == false | temp == false | feverish == false | respiratory == false | symptoms == false | contact == false ){
                 return false;
             }
+            */
 
             /*
             var names = '';
@@ -154,10 +156,11 @@ $(function () {
             var where =$('textarea[id="where-text"]').val();
             var what =$('textarea[id="what-text"]').val();
 
-
+            /*
             if(first == false | password == false | date == false | where == false | what == false ){
                 return false;
             }
+            */
 
             var msg = `【県外訪問記録】\nmode:Visit\n初回利用:${first}\nPassword:${password}\n訪問開始日:${date_start}\n訪問終了日:${date_end}\n訪問先:${where}\nイベント:${what}\n`;
         }
