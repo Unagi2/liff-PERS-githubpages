@@ -137,10 +137,11 @@ $(function () {
             var where =$('textarea[name="where-text"]').val();
             var what =$('textarea[name="what-text"]').val();
 
-
+            /*
             if(first == false | password == false | date == false | where == false | what == false ){
                 return false;
             }
+            */
 
             var msg = `【医療受診記録】\nmode:Hospital\n初回利用:${first}\nPassword:${password}\n受診日:${date}\n病院名:${where}\n病状:${what}\n`;
         }
